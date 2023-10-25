@@ -1,0 +1,61 @@
+http://stackoverflow.com/questions/26889358/generate-color-palette-from-image-with-imagemagick
+http://stackoverflow.com/questions/9853325/how-to-convert-a-svg-to-a-png-with-image-magick
+
+
+perlmagick
+
+convert b08.jpg  -format %c -depth 8  -remap netscape: histogram:info:histogram_image.txt
+
+sort -n histogram_image.txt | tail -1
+
+
+convert -size 60x60 label:"AY" xc:"rgb(13, 28, 37)" xc:"rgb(105, 147, 163" xc:"rgb(71, 112, 131)" xc:"rgb(44, 74, 94)" xc:"rgb(198, 209, 216)" +append embedly-palette-from-testimage.jpg
+
+
+convert -size 60x60 label:"91ck" xc:"srgb(19,28,35)" xc:"srgb(79,88,84)" xc:"srgb(44,77,103)" xc:"srgb(27,51,77)" xc:"srgb(84,126,150)" +append im-palette-from-testimage.jpg
+
+
+https://github.com/shakiba/svgexport
+npm install svgexport -g
+
+svgexport 001.svg output.png 100% 180:210
+
+
+convert output.png  -format %c -colorspace LAB -colors 5 histogram:info:- | sort -n -r
+    157154: ( 19, 28, 35) #131C23 srgb(19,28,35)
+     16164: ( 27, 51, 77) #1B334D srgb(27,51,77)
+     15725: ( 79, 88, 84) #4F5854 srgb(79,88,84)
+      8608: ( 44, 77,103) #2C4D67 srgb(44,77,103)
+      5149: ( 84,126,150) #547E96 srgb(84,126,150)
+
+	  
+	   14279: ( 51,110,182,254) #336EB6FE srgba(51,110,182,0.997742)
+      8361: ( 50,111,182,  2) #326FB602 srgba(50,111,182,0.00929274)
+      6790: (202,200,196,255) #CAC8C4 srgba(202,200,196,1)
+      4217: ( 70, 62, 76,253) #463E4CFD srgba(70,62,76,0.991272)
+      4153: (216,116, 34,255) #D87422 srgba(216,116,34,1)
+
+convert -size 60x60 xc:"srgb(51,110,182)" xc:"srgb(50,111,182)" xc:"srgb(202,200,196)" xc:"srgb(70, 62, 76)" xc:"srgb(216,116, 34)" +append im-palette-from-testimage.jpg
+
+
+convert 112.svg.png  -format %c -depth 8  -remap netscape: histogram:info:-
+
+convert 112.svg.png  -format %c -colorspace LAB -colors 5 -matte netscape: histogram:info:-
+
+
+convert 112.svg.png  -format %c -depth 8 netscape: -define png:exclude-chunks=bkgd histogram:info:- | sort | tail -n1 | \
+>   sed -e 's/.*\(#[0-9A-F]\+\).*/\1/'
+
+
+
+
+graphicsmagick
+
+http://blog.endpoint.com/2011/04/determining-dominant-image-color.html
+convert Waffle.jpg -scale 1x1\! -format '%[pixel:u]' info:-
+rgb(219,166,94)
+
+
+http://aheckmann.github.io/gm/docs.html#drawing-primitives
+https://www.npmjs.com/package/colour-extractor
+https://github.com/null2/color-thief

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<svg 
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="500" height="590">
+	<defs>
+	</defs>
+	<path
+		d="M30 70 L30 190 C70 210 70 290 30 310 L30 420 C30 510 200 540 200 540 C225.5 544.5
+			240 560 250 570 C260 560 274.5 544.5 300 540 C300 540 470 510 470 420 L470 310
+			C430 290 430 210 470 190 L470 70 C400 0 100 0 30 70 z"
+		 style="fill:none;stroke:rgb(0,0,0);stroke-width:2"/>
+	<path
+		d="M36 75 L36 186 C76 212 76 290 36 314 L36 417 C36 505 201 534 201 534 C225 537 240
+			552 250 562 C260 552 274 537 300 534 C299 534 464 505 464 417 L464 314 C424
+			290 424 212 464 186 L464 75 C397 10 103 10 36 75 z"
+		 style="fill:rgb(255,0,0);stroke:rgb(0,0,0);stroke-width:2"/>
+	<path
+		d="M77 180 C89 229 89 277 77 326 C101 302 141 289 174 277 C162 310 149 350 125 374 C174
+			362 222 362 271 374 C247 350 235 310 222 277 C255 289 295 301.51 319 326
+			C308 277 308 229 319 180 C295 204 255 216 222 229 C235 196 247 156 271 132 C222
+			143 174 143 125 132 C149 156 162 196 174 229 C141 216 101 204 77 180 z"
+		 style="fill:rgb(255,192,0);stroke:rgb(0,0,0);stroke-width:2"/>
+	<path
+		d="M365 370 L365 150 C365 125 365 110 377 85 C389 110 389 125 389 150 L389 370 L385
+			450 L369 450 z"
+		 style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:2"/>
+	<ellipse cx="377" cy="460" rx="12" ry="12"
+		 style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:2"/>
+	<rect x="337" y="375" width="80" height="12"
+		 style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:2"/>
+	<ellipse cx="330" cy="381" rx="11" ry="11"
+		 style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:2"/>
+	<ellipse cx="424" cy="381" rx="11" ry="11"
+		 style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:2"/>
+	<line x1="377" y1="117" x2="377" y2="375"
+		 style="fill:none;stroke:rgb(0,0,0);stroke-width:2"/>
+	<line x1="367" y1="401" x2="387" y2="401"
+		 style="fill:none;stroke:rgb(0,0,0);stroke-width:2"/>
+	<line x1="368" y1="417" x2="386" y2="417"
+		 style="fill:none;stroke:rgb(0,0,0);stroke-width:2"/>
+	<line x1="369" y1="433" x2="385" y2="433"
+		 style="fill:none;stroke:rgb(0,0,0);stroke-width:2"/>
+</svg>
+ 
